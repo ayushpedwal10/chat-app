@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ayush's Live Chat App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+      
+        <!-- ✅ Correct Firebase SDKs (UMD format, not ES modules) -->
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+      
+        <!-- ✅ Your JS should come AFTER these (also use defer) -->
+        <script defer src="script.js"></script>
+      </head>      
+</head>
+<body>
+  <div class="chat-wrapper">
+    <header>
+      <h1>💬 Ayush's Live Chat</h1>
+      <p>Talk in real-time — no refresh needed!</p>
+    </header>
+
+    <div id="messages" class="messages"></div>
+
+    <footer>
+      <input type="text" id="name" placeholder="Your name" />
+      <input type="text" id="message" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </footer>
+  </div>
+
+  <!-- ✅ Load YOUR JS file LAST -->
+  <script src="script.js" defer></script>
+</body>
+</html>

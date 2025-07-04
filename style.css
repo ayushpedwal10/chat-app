@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chat-wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  
+  header {
+    padding: 20px;
+    background: #272727;
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header p {
+    font-size: 13px;
+    color: #aaa;
+  }
+  
+  .messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #181818;
+  }
+  
+  .messages div {
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    background: #03a9f4;
+    color: #000;
+    text-align: left;
+    width: fit-content;
+    max-width: 80%;
+    animation: fadeIn 0.2s ease-in;
+  }
+  
+  footer {
+    display: flex;
+    padding: 10px;
+    background: #272727;
+    border-top: 1px solid #333;
+  }
+  
+  footer input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  footer input#name {
+    max-width: 120px;
+  }
+  
+  footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #03a9f4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  footer button:hover {
+    background: #0288d1;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
