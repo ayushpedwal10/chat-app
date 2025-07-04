@@ -5,7 +5,7 @@ This is a simple, fully functional **real-time chat application** built using **
 ---
 
 ## 🚀 Live Demo
-🌐 [Click to Open Chat App](https://chat-app-eaa13.web.app)
+🌐 [Click to Open Chat App](https://ayush-chat-app-eaa13.web.app)
 
 ---
 
